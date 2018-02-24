@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr>
+        <form action="forms.html" method="POST">
+            <p>
+                <label>Nome</label>
+                <input type="text" maxlength="60" value="Nanderson" name="nome"
+                 disabled>
+            </p>
+        
+            <p>
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Idade</label>
+                <input type="number" name="idade" placeholder="Idade" required>
+                <!-- Tel, URL -->
+            </p>
+            <p>
+                <label>Sexo</label>
+                <select name="sexo" required>
+                    <option value="M" selected> Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="termos"> Termo de utilização
+            </p>
+            <p>
+                <label>Sexo</label>
+                <input type="radio" name="sexo_2" value="M"> Masculino
+                <input type="radio" name="sexo_2" value="F"> Feminino
+            </p>
+            <p>
+                <label>Sobre</label>
+                <textarea name="sobre" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label>Envia Sua Foto</label>
+                <input type="file" name="foto" multiple>
+            </p>
+            <input type="submit" name="envio" value="Enviar Dados">
+        </form>
+</body>
+</html>
