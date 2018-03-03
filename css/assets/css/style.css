@@ -1,0 +1,100 @@
+/**
+Reset
+*/
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+    /* background: #000; */
+}
+
+/*
+Estilizações do header
+*/
+header.navBar {
+    width: 100%; 
+    background: rgba(255, 0, 0, 1);
+    /* position: fixed; */
+}
+
+header .navMenu {
+   width: 80%;
+   margin: 0 auto;
+   display: table;
+}
+
+header .navMenu ul {
+    list-style: none;
+}
+header .navMenu ul li {
+    float: left;
+}
+
+/* 
+Ancoras Estilos
+ */
+header .navMenu ul li a {
+    text-decoration: none;
+    padding: 20px 15px;    
+    float: left;
+    color: #fff;
+    transition: background .3s ease-in-out;
+}
+header .navMenu ul li a:hover {
+    background: #fff;
+    color: #f00;
+    opacity: 1;
+}
+/* header .navMenu ul li a:active {
+    background: rgb(198, 14, 214);
+    color: #f00;
+} */
+/* header .navMenu ul li a:visited {
+    background: rgb(198, 14, 214);
+    color: #f00;
+} */
+
+/* 
+Content
+ */
+ section.content {
+     width: 80%;
+     margin: 0 auto;
+     /* min-height: 600px; */
+     display: table;
+     /* background-image: url(../img/1.jpg); */
+     /* background-position: bottom; */
+     /* background-repeat: no-repeat; */
+}
+section.content aside {
+    width: 30%;
+    height: 450px;
+    /* background: -webkit-radial-gradient(#096, #000);
+    background: -ms-radial-gradient(#096, #000);
+    background: -o-radial-gradient(#096, #000);
+    background: -moz-radial-gradient(#096, #000);*/
+    background: linear-gradient(/*to left,*/ #096, #000);
+    float: left;
+}
+section.content .posts {
+    width: 60%;
+    height: 450px;
+    background: #098bf5;
+    float: left;
+    padding: 20px;
+}
+
+section.content .posts .post {
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 10px 5px 0 0;
+}
+footer.footer {
+    width: 100%;
+    height: 200px;
+    background: #000;
+}
